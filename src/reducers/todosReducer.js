@@ -1,5 +1,5 @@
 import initialState from './todos';
-import { ADD_TODO, DELETE_TODO, TOGGLE_TODO } from "../constans/types"
+import { ADD_TODO, DELETE_TODO, TOGGLE_TODO} from "../constans/types"
 
 const todosReducer = (state = initialState, action) => {
   switch (action.type) {
@@ -22,6 +22,8 @@ const todosReducer = (state = initialState, action) => {
             : task
         ),
       };
+     
+      
     default:
       return state;
   }
